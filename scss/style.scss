@@ -1,0 +1,83 @@
+@import "_nullstyle";
+@import "_mixins";
+
+.container {
+   width: 1080px;
+   margin: 1.5rem auto 0;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+   height: 90vh;
+   
+}
+
+.timer-name-block {
+   font-size: 1.5rem;
+   
+}
+.timer {
+   display: flex;
+   justify-content: space-between;
+   font-size: 4rem;
+   
+   div{
+      margin: 0 1rem ;
+   }
+   div:last-child(){
+      margin: 0 0 0 1rem;
+   }
+}
+
+
+
+.days {
+   @include after-elements('days');
+   
+}
+.hours {
+   @include after-elements('hours');
+   
+}
+.minutes {
+   @include after-elements('minutes');
+   
+}
+.seconds {
+   @include after-elements('seconds');
+   
+}
+
+.settings {
+   height: 220px;
+   padding: 1rem;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-between;
+   align-items: center;
+   
+   // border: 1px solid black;
+
+   button {
+      color: #1f1f1f;
+      background-color: rgb(228, 225, 225);
+      padding: 0.3rem;
+      border: 1px solid #1f1f1f;
+      border-radius: 0.3rem;
+      &:active {
+         box-shadow: 0 0 3px inset royalblue;
+      }
+      &:hover {
+         box-shadow: 0 0 3px royalblue;
+      }
+   }
+   input  {
+      height: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      
+      &:focus{
+         box-shadow: 0 0 3px royalblue;
+      }
+   }
+}

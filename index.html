@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style/style.css">
+   <title>Countdown Timer</title>
+</head>
+
+<body>
+   <div class="container">
+
+      <div class="timer-name-block">* * * Timer name * * *</div>
+      <div class="timer">
+         <div class="days">00</div>:
+         <div class="hours">00</div>:
+         <div class="minutes">00</div>:
+         <div class="seconds">00</div>
+      </div>
+
+      <form action="#">
+         <div class="settings">
+            <label for="timer-name">Timer name</label>
+            <input type="text" id="timer-name" placeholder="max length 30">
+            <button class="set-name-button">Change Name</button>
+
+            <label for="timer-date">Timer date</label>
+            <input type="date" id="timer-date">
+            <button class="set-time-button">Set time</button>
+
+
+         </div>
+      </form>
+
+   </div>
+
+   <script src="script/script.js"></script>
+</body>
+
+</html>
